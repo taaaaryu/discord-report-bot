@@ -1,8 +1,9 @@
-discord.py[voice]
+py-cord[voice]
 pydub
 openai
-whisper
+openai-whisper
 google-api-python-client
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
+
