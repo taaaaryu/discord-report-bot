@@ -1,0 +1,18 @@
+openapi: 3.0.3
+info:
+  title: Discord Recorder Interaction API
+  version: 1.0.0
+paths:
+  /discord/interactions:
+    post:
+      summary: Discord interaction endpoint
+      responses:
+        '200':
+          description: Discord interaction response
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '401':
+          description: Invalid signature

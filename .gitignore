@@ -1,17 +1,7 @@
-# Byte-compiled / optimized / DLL files
+.env
+.venv/
 __pycache__/
 *.py[cod]
-
-# Virtual environments
-venv/
-
-# Recordings and transcripts
-recordings/
-
-# Credentials
-*.json
-*.pem
-
-# IDE files
-.vscode/
-.idea/
+.pytest_cache/
+infra/.terraform/
+src/*.egg-info/

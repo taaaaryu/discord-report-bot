@@ -1,0 +1,11 @@
+services:
+  recorder:
+    build:
+      context: ../..
+      dockerfile: deploy/aws-manual/worker/Dockerfile
+    env_file:
+      - ../../.env
+    environment:
+      START_ON_BOOT: "true"
+      AUTO_START: "false"
+    restart: "no"

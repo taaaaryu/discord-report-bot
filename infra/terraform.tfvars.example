@@ -1,0 +1,19 @@
+region                  = "ap-northeast-1"
+name_prefix             = "discord-recorder"
+vpc_id                  = "vpc-xxxxxxxx"
+private_subnet_ids      = ["subnet-aaaa", "subnet-bbbb"]
+public_subnet_ids       = ["subnet-cccc", "subnet-dddd"]
+assign_public_ip        = true
+recorder_image_uri      = "123456789012.dkr.ecr.ap-northeast-1.amazonaws.com/discord-recorder:latest"
+
+discord_bot_token_ssm_param_arn = "arn:aws:ssm:ap-northeast-1:123456789012:parameter/discord/bot-token"
+openai_api_key_ssm_param_arn    = "arn:aws:ssm:ap-northeast-1:123456789012:parameter/openai/api-key"
+
+target_voice_channel_id = "123456789012345678"
+minutes_text_channel_id = "123456789012345678"
+min_participants        = 2
+audio_chunk_minutes     = 10
+retention_days          = 7
+
+discord_public_key      = "YOUR_DISCORD_APP_PUBLIC_KEY"
+use_fargate_spot        = true

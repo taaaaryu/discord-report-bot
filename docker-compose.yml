@@ -1,0 +1,15 @@
+services:
+  recorder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      START_ON_BOOT: "true"
+      AUTO_START: "false"
+    volumes:
+      - ./audio:/app/audio
+      - ./transcripts:/app/transcripts
+      - ./minutes:/app/minutes
+    restart: unless-stopped
